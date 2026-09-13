@@ -328,10 +328,14 @@
 .google-btn {
   width: 100%;
   padding: 12px;
-
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
   font-size: 15px;
   cursor: pointer;
@@ -364,6 +368,13 @@
 .form-error {
   color: #d93025;
   font-size: 14px;
-  margin-top: 0px;
+  margin-top: 4px;
   margin-bottom: 15px;
 }
+/* FORGOT PASSWORD PAGE */
+.form-message {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+/* HOMEPAGE */
