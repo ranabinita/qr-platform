@@ -33,7 +33,7 @@ function Login() {
             <input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter your email address"
               required
               className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-200"
             />

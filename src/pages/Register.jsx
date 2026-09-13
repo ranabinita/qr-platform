@@ -27,7 +27,6 @@ function Register() {
     setError("");
     console.log("Registration form is valid");
   };
-
   return (
     <div className="min-h-screen bg-slate-50 px-4 py-10">
       <div className="mx-auto flex min-h-[80vh] max-w-7xl items-center justify-center">
@@ -69,7 +68,7 @@ function Register() {
               <input
                 id="register-email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email address"
                 required
                 className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-200"
               />
@@ -142,7 +141,6 @@ function Register() {
                 </button>
               </div>
             </div>
-
             {error && (
               <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-600">
                 {error}
@@ -185,5 +183,4 @@ function Register() {
     </div>
   );
 }
-
 export default Register;

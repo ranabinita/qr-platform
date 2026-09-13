@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { QrCode, Languages } from "lucide-react";
+import { useState } from "react";
 
 function Navbar() {
+  const [language, setLanguage]= useState("en");
   return (
     <nav className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
@@ -22,7 +24,7 @@ function Navbar() {
           </div>
         </Link>
 
-        {/* Right Side */}
+        {/* Navigation */}
         <div className="flex items-center gap-3 sm:gap-6">
 
           <Link
@@ -37,12 +39,14 @@ function Navbar() {
             <Languages size={17} className="text-slate-500" />
 
             <select
-              defaultValue="en"
+              onChange={(e) => changeLanguage(e.target.value)}
               className="cursor-pointer bg-transparent text-sm font-medium text-slate-700 outline-none"
             >
               <option value="en">English</option>
               <option value="es">Español</option>
               <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="ja">日本語</option>
             </select>
           </div>
 

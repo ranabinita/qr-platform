@@ -10,7 +10,7 @@ function ForgotPassword() {
     e.preventDefault();
 
     if (!email) {
-      setMessage("Please enter your email.");
+      setMessage("Please enter your email address.");
       return;
     }
 
@@ -41,7 +41,7 @@ function ForgotPassword() {
               <input
                 id="forgot-email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
